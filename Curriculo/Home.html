@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Curriculum - Gabriel Franco</title>
+</head>
+
+<body>
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Curriculum</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                id="dropPortfolio">Portifolio</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="portfolioFront.html">Front-end</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-light d-flex align-items-center gap-2"
+                        data-bs-toggle="dropdown">
+                        <img style="width: 22px;" src="./static/images/sino.png" alt="">
+                        Notificações
+                        <span class="badge bg-danger">6</span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Mensagens</li>
+                        <li class="dropdown-item">Mensagem 1</li>
+                        <li class="dropdown-item">Mensagem 2</li>
+                        <li class="dropdown-item">Mensagem 3</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container pt-2 d-flex">
+        <aside class="col-md-4 rounded-2 border border-black d-flex flex-column align-items-center p-3 gap-2 me-2">
+            <img style="width: 300px; height: 300px;" class="object-fit-cover rounded-circle"
+                src="./static/images/usuario.jpg" alt="">
+            <h2 class="card-title">Gabriel Martins Franco</h2>
+            <p>Desenvolvedor Web Full Stack</p>
+            <!-- <h4>Sobre mim:</h4> -->
+            <div class="accordion container-fluid">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-warning" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sobre">
+                            <h5>Sobre mim:</h5>
+                        </button>
+                    </h2>
+                    <div id="sobre" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint obcaecati commodi
+                                voluptates tempora nisi, provident quidem dolores, dolorem nemo aliquid veniam, optio
+                                iure sit id totam enim aut quos!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="col-7 rounded-2 border border-black p-4">
+            <h1 class="card-title">Skils</h1>
+            <div class="accordion m-1">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-warning" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#soft">
+                            Soft Skils
+                        </button>
+                    </h2>
+                    <div id="soft" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium pariatur architecto
+                                assumenda sed porro, quis ex dolore sit totam obcaecati? Amet doloribus error rem ipsa?
+                                Eaque fuga maxime ipsam et.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-secondary-subtle" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#hard">
+                            Hard Skils
+                        </button>
+                    </h2>
+                    <div id="hard" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequuntur
+                                laudantium necessitatibus error quisquam est porro eum atque recusandae id adipisci
+                                incidunt, vitae rerum enim quasi, voluptate minima iusto maiores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex gap-2">
+                <div class="card" style="width: 50%;">
+                    <img style="height: 250px;" src="./static/images/o-que-e-formacao-academica.jpg" class="card-img-top object-fit-cover" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Formação</h5>
+                        <p class="card-text">Algumas das minhas formações academicas até então...</p>
+                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#formacoes">Ver
+                            todas</a>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="formacoes">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="meuModalLabel">Formações academicas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit libero!
+                                    Adipisci eligendi voluptatum laboriosam qui alias minima, illum rem, magni, neque
+                                    dolores expedita ipsa soluta esse eius molestiae labore.</p>
+                            </div>
+                            <div class="moda-footer d-flex justify-content-center p-1">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 50%;">
+                    <img style="height: 250px;" src="./static/images/curriculo-sem-experiencia.jpg" class="card-img-top object-fit-cover" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Experiências</h5>
+                        <p class="card-text">Algumas das minhas formações academicas até então...</p>
+                        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#experiencias">Ver
+                            todas</a>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="experiencias">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="meuModalLabel">Experiências</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit libero!
+                                    Adipisci eligendi voluptatum laboriosam qui alias minima, illum rem, magni, neque
+                                    dolores expedita ipsa soluta esse eius molestiae labore.</p>
+                            </div>
+                            <div class="moda-footer d-flex justify-content-center p-1">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
